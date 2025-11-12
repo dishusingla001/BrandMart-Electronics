@@ -639,14 +639,27 @@ body {
 }
 
 /* Policy Container Styles */
+#offer-container{
+  padding: 2rem;
+}
+
+#offer-headline{
+  /* margin-left: 3.3rem; */
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2.4rem;
+  font-family: "Momo Trust Display", sans-serif;
+}
 .policy-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   padding: 4rem 2rem;
   margin: 0 auto;
-  max-width: 1400px;
+  max-width: 1450px;
   background-color: var(--backgroundSecondary);
+  margin-top: 2rem;
+  border-radius: 20px;
 }
 
 .policy-card {
@@ -722,5 +735,386 @@ body {
 @media (max-width: 480px) {
   .policy-container {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Feature Container Styles */
+#feature-container {
+  padding: 4rem 2rem;
+  background-color: var(--backgroundColor);
+  overflow: hidden;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-box {
+  background: white;
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.feature-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, var(--main-color), var(--supporting-color));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.feature-icon i {
+  font-size: 2rem;
+  color: white;
+}
+
+.feature-box:hover .feature-icon {
+  transform: rotate(10deg) scale(1.1);
+}
+
+.feature-box h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--textColor);
+  margin-bottom: 1rem;
+  font-family: "Momo Trust Display", sans-serif;
+}
+
+.feature-box p {
+  font-size: 1rem;
+  color: var(--secondaryColor);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Sliding Animations */
+.slide-left {
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+.slide-right {
+  animation: slideInRight 0.8s ease-out forwards;
+}
+
+/* Animation delays for staggered effect */
+.feature-box:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.feature-box:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.feature-box:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.feature-box:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive Design for Feature Container */
+@media (max-width: 768px) {
+  #feature-container {
+    padding: 3rem 1rem;
+  }
+  
+  .feature-grid {
+    gap: 1.5rem;
+  }
+  
+  .feature-box {
+    padding: 2rem 1.5rem;
+  }
+  
+  .feature-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .feature-icon i {
+    font-size: 1.5rem;
+  }
+  
+  .feature-box h3 {
+    font-size: 1.3rem;
+  }
+  
+  .feature-box p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .feature-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  
+  .feature-box {
+    padding: 1.5rem 1rem;
+  }
+  
+  /* All boxes slide from left on mobile for consistency */
+  .slide-right {
+    animation: slideInLeft 0.8s ease-out forwards;
+  }
+}
+
+.footer-container{
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  background-color: var(--buttonColor);
+  color: white;
+}
+
+.upper-container{
+  display: flex;
+  flex-direction: row;
+  gap: 6rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Brand Info Styles */
+.brand-info {
+  /* margin-top: 2rem; */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+#footer-brand-tag {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: "Momo Trust Display", sans-serif;
+  color: white;
+  margin: 0;
+  line-height: 1.2;
+}
+
+#footer-brand-line {
+  font-size: 1.1rem;
+  color: #b0b0b0;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 300px;
+}
+
+/* .tags {
+  margin-top: 1rem;
+} */
+
+.tags ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.tags ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.tags ul li:hover {
+  transform: translateY(-3px);
+}
+
+.tags ul li i {
+  font-size: 1.5rem;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+/* Responsive Design for Brand Info */
+@media (max-width: 1024px) {
+  .upper-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  #footer-brand-tag {
+    font-size: 2rem;
+  }
+  
+  .tags ul {
+    gap: 1rem;
+  }
+  
+  .tags ul li {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .tags ul li i {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 2rem 1rem;
+  }
+  
+  #footer-brand-tag {
+    font-size: 1.8rem;
+  }
+  
+  #footer-brand-line {
+    font-size: 1rem;
+  }
+  
+  .tags ul {
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+  
+  .tags ul li {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .tags ul li i {
+    font-size: 1.2rem;
+  }
+}
+
+
+/* Shopping Tags Styles */
+.shopping-tags {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#shopping-li-tag {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Momo Trust Display", sans-serif;
+  color: white;
+  margin-bottom: 0.6rem;
+  /* border-bottom: 2px solid var(--main-color); */
+  padding-bottom: 0.5rem;
+  display: inline-block;
+  width: fit-content;
+}
+
+.shopping-tags ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0;
+  margin: 0;
+}
+
+.shopping-tags ul li {
+  color: #b0b0b0;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0.3rem 0;
+  position: relative;
+}
+
+.shopping-tags ul li:not(#shopping-li-tag):hover {
+  color: white;
+  padding-left: 0.5rem;
+  transform: translateX(5px);
+}
+
+.shopping-tags ul li:not(#shopping-li-tag)::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 2px;
+  /* background-color: var(--main-color); */
+  transition: width 0.3s ease;
+}
+
+.shopping-tags ul li:not(#shopping-li-tag):hover::before {
+  width: 8px;
+}
+
+/* Responsive Design for Shopping Tags */
+@media (max-width: 1024px) {
+  #shopping-li-tag {
+    font-size: 1.3rem;
+  }
+  
+  .shopping-tags ul li {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .shopping-tags {
+    gap: 1rem;
+  }
+  
+  #shopping-li-tag {
+    font-size: 1.2rem;
+  }
+  
+  .shopping-tags ul {
+    gap: 0.6rem;
+  }
+  
+  .shopping-tags ul li {
+    font-size: 0.9rem;
   }
 }
