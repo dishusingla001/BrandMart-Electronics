@@ -1118,3 +1118,90 @@ body {
     font-size: 0.9rem;
   }
 }
+
+/* Experience Tag Styles */
+.experience-tag {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#experience-li-tag {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Momo Trust Display", sans-serif;
+  color: white;
+  margin-bottom: 0.6rem;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+  width: fit-content;
+}
+
+.experience-tag ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0;
+  margin: 0;
+}
+
+.experience-tag ul li {
+  color: #b0b0b0;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0.3rem 0;
+  position: relative;
+}
+
+.experience-tag ul li:not(#experience-li-tag):hover {
+  color: white;
+  padding-left: 0.5rem;
+  transform: translateX(5px);
+}
+
+.experience-tag ul li:not(#experience-li-tag)::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 2px;
+  transition: width 0.3s ease;
+}
+
+.experience-tag ul li:not(#experience-li-tag):hover::before {
+  width: 8px;
+}
+
+/* Responsive Design for Experience Tag */
+@media (max-width: 1024px) {
+  #experience-li-tag {
+    font-size: 1.3rem;
+  }
+  
+  .experience-tag ul li {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-tag {
+    gap: 1rem;
+  }
+  
+  #experience-li-tag {
+    font-size: 1.2rem;
+  }
+  
+  .experience-tag ul {
+    gap: 0.6rem;
+  }
+  
+  .experience-tag ul li {
+    font-size: 0.9rem;
+  }
+}
