@@ -54,8 +54,8 @@
       </section>
 
       <section class="search-bar">
-        <i class="fa-solid fa-magnifying-glass"></i>
         <input type="text" placeholder="Search for Products">
+        <i class="fa-solid fa-magnifying-glass"></i>
       </section>
 
       <section class="cart&login">
@@ -290,6 +290,71 @@
       </section>
   </section>
 
+  <!-- product section -->
+
+  <section class="section-product">
+    <div class="container">
+      <div class="section-common-heading">
+        BrandMart Store
+      </div>
+    </div>
+
+    <section class="container">
+      <div class="productContainer">
+
+      </div>
+    </section>
+  </section>
+
+  <!-- start templeate section -->
+  <template id="product-template">
+    <div class="cards" id="cardvalue">
+      <article class="information [cards]"> 
+        <span class="category"></span>
+
+        <div class="imageContainer">
+          <img class="productImage" src="" alt="">
+        </div>
+
+        <h2 class="productName"></h2>
+
+        <div class="productRating">
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+
+        <p class="product-Description"></p>
+
+        <div class="productPrice">
+          <p class="currentPrice"></p>
+          <p class="originalPrice"></p>
+        </div>
+
+         <div class="productStock">
+          <p class="stockheadline">Total Stock Availabe:</p>
+          <p class="currentStock"></p>
+        </div>
+
+        <div class="qunatitySection">
+          <p>Quantity(Pieces)</p>
+          <div class="quantityValue">
+            <button class="productDecrement">-</button>
+            <p class="showProductQuantity">1</p>
+            <button class="productIncrement">+</button>
+          </div>
+        </div>
+
+        <button class="add-to-card-button">
+          <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+        </button>
+      </article>
+    </div>
+  </template>
+
+
   <section class="why-us">
     <h2 id="offer-headline">Why BrandMart ?</h2>
 
@@ -373,7 +438,16 @@
       </div>
 
       <div class="newsletter-section">
+        <h1 id="newletter-heading">NEWSLETTER</h1>
 
+        <p id="newletter-tag-line">Don't miss out! Get the best offers, new arrivals, and discounts before anyone else.</p>
+
+        <div class="newsletter-input-wrapper">
+          <input type="email" placeholder="Enter your email..">
+          <button type="submit">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
       </div>
     </div>
 
@@ -381,5 +455,7 @@
 
     </div>
   </footer>
+
+  <script type="module" src="/src/main.js"></script>
 </body>
 </html>
