@@ -7,7 +7,7 @@
     "price": 45999,
     "originalPrice": 65999,
     "stock": 15,
-    "image": "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=500",
+    "image": "https://nandilathgmart.com/wp-content/uploads/2024/08/BRAVIA.jpg",
     "description": "Experience stunning 4K UHD resolution with HDR support. Smart TV features with built-in apps and voice control."
   },
   {
@@ -18,18 +18,18 @@
     "price": 24999,
     "originalPrice": 32999,
     "stock": 8,
-    "image": "https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?w=500",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYvQ9SFaHj-DCX2MBBXV9_brmclYatuxVkEQ&s",
     "description": "Double door refrigerator with frost-free technology. Energy efficient with smart inverter compressor."
   },
   {
     "id": 3,
-    "name": "Sony Wireless Noise Cancelling Headphones",
+    "name": "Boat Wireless Headphones",
     "category": "Audio",
-    "brand": "Sony",
+    "brand": "Boat",
     "price": 12999,
     "originalPrice": 18999,
     "stock": 25,
-    "image": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=500",
+    "image": "https://www.boat-lifestyle.com/cdn/shop/products/main2_b66dce6b-710d-49cb-9d1c-2bc8c9c0ab15_600x.png?v=1645698328",
     "description": "Premium wireless headphones with active noise cancellation. 30-hour battery life with quick charging."
   },
   {
@@ -40,7 +40,7 @@
     "price": 18499,
     "originalPrice": 24999,
     "stock": 12,
-    "image": "https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=500",
+    "image": "https://jamesandco.in/wp-content/uploads/2024/09/123-1.png",
     "description": "Fully automatic top load washing machine with multiple wash programs. Energy and water efficient."
   },
   {
@@ -51,7 +51,7 @@
     "price": 52999,
     "originalPrice": 64999,
     "stock": 10,
-    "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=500",
+    "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/2024/05/framework-laptop-2.png",
     "description": "Intel Core i5 11th Gen, 8GB RAM, 512GB SSD. 15.6-inch FHD display perfect for work and entertainment."
   },
   {
@@ -62,40 +62,7 @@
     "price": 35999,
     "originalPrice": 42999,
     "stock": 7,
-    "image": "https://images.unsplash.com/photo-1606980707986-683eeb4bcd0e?w=500",
+    "image": "https://fotocentreindia.com/wp-content/uploads/2018/03/Canon-DSLR-Camera-EOS-1500D-with-18-55mm-IS-II-Online-Buy-Mumbai-India-2.jpg",
     "description": "24.1MP DSLR with 18-55mm lens. Wi-Fi enabled for easy photo sharing. Perfect for beginners."
-  },
-  {
-    "id": 7,
-    "name": "Havells 1.5 Ton Split AC",
-    "category": "Air Conditioner",
-    "brand": "Havells",
-    "price": 32999,
-    "originalPrice": 42999,
-    "stock": 6,
-    "image": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=500",
-    "description": "3-star rated inverter AC with copper condenser. Energy efficient with turbo cooling mode."
-  },
-  {
-    "id": 8,
-    "name": "Apple iPhone 14",
-    "category": "Smartphone",
-    "brand": "Apple",
-    "price": 69999,
-    "originalPrice": 79999,
-    "stock": 20,
-    "image": "https://images.unsplash.com/photo-1678652197635-56d3c11e8a06?w=500",
-    "description": "128GB storage, A15 Bionic chip. Advanced dual-camera system with cinematic mode."
-  },
-  {
-    "id": 9,
-    "name": "Blue Star Water Purifier RO+UV",
-    "category": "Water Purifier",
-    "brand": "Blue Star",
-    "price": 14999,
-    "originalPrice": 19999,
-    "stock": 15,
-    "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=500",
-    "description": "8-stage purification with RO+UV technology. 7L storage capacity with mineral retention."
   }
 ]
