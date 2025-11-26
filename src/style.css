@@ -269,7 +269,7 @@ html {
 
 /* Optional: Add a cart items counter */
 .addtoCart::after {
-  content: '0';
+  content: attr(data-count);
   position: absolute;
   top: -5px;
   right: -5px;
@@ -1954,7 +1954,6 @@ html {
   line-height: 1.4;
   min-height: 2.8rem;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -1978,7 +1977,6 @@ html {
   line-height: 1.6;
   margin: 0.5rem 0 1rem;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   flex-grow: 1;
@@ -2250,5 +2248,153 @@ html {
     width: 28px;
     height: 28px;
     font-size: 1rem;
+  }
+}
+
+/* Cart Page Styles */
+.showProductinCart {
+  padding: 2rem;
+  background-color: var(--backgroundColor);
+  /* min-height: 100vh; */
+}
+
+.cartContainer {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.Cartproduct {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--textColor);
+  text-align: center;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price-container {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  height: fit-content;
+  position: sticky;
+  top: 20px;
+}
+
+#price-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--textColor);
+  margin-bottom: 1rem;
+  font-family: "Urbanist", sans-serif;
+}
+
+.price-container hr {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 1rem 0;
+}
+
+.all-item-price,
+.discount-price,
+.extra-price,
+.total-amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-family: "Urbanist", sans-serif;
+}
+
+.all-item-price p,
+.discount-price p,
+.extra-price p,
+.total-amount p {
+  color: var(--textColor);
+}
+
+.total-price,
+.discount-tag,
+.promise-tag,
+.amount-tag {
+  font-weight: 500;
+}
+
+.total-mrp,
+.discount-on-item,
+.promise-price,
+.amount-price {
+  font-weight: 600;
+}
+
+.discount-on-item {
+  color: #388e3c;
+}
+
+.amount-price {
+  font-size: 1.2rem;
+  color: var(--main-color);
+}
+
+.price-container h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #388e3c;
+  margin-top: 0.5rem;
+  font-family: "Urbanist", sans-serif;
+}
+
+/* Cart Responsive Design */
+@media (max-width: 1024px) {
+  .cartContainer {
+    grid-template-columns: 1fr 350px;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cartContainer {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .price-container {
+    position: static;
+  }
+  
+  .showProductinCart {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .showProductinCart {
+    padding: 0.5rem;
+  }
+  
+  .Cartproduct,
+  .price-container {
+    padding: 1rem;
+  }
+  
+  #price-heading {
+    font-size: 1.3rem;
+  }
+  
+  .all-item-price,
+  .discount-price,
+  .extra-price {
+    font-size: 0.9rem;
   }
 }

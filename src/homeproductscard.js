@@ -4,6 +4,7 @@ import { homeQuantityToggle } from "./homeQuantityToggle";
 const productContainer = document.querySelector('.productContainer');
 const productTemplate = document.querySelector('#product-template');
 
+
 export const showProudctContainer = (products) => {
   if(!products){
     return false;
@@ -38,5 +39,4 @@ export const showProudctContainer = (products) => {
 
     productContainer.append(productClone);
   });
-
 }

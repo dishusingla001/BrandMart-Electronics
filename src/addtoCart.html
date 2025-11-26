@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <header class="container-navbar">
+
+    <section class="nav-bar">
+      <section class="nav-logo">
+        <p>BrandMart</p>
+      </section>
+
+      <section class="bar">
+        <ul>
+          <li class="nav-item">
+            <a href="" class="nav-link">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="" class="nav-link">Products</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="" class="nav-link">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="search-bar">
+        <input type="text" placeholder="Search for Products">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </section>
+
+      <section class="cart&login">
+        <a href="src/addtoCart.html" class="addtoCart">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+
+        <a href="#" class="userlogin">
+          <i class="fa-solid fa-user"></i>
+        </a>
+      </section>
+
+    </section>
+
+  </header>
+
+  <section class="showProductinCart">
+    <div class="cartContainer">
+       <div class="Cartproduct">
+          No items Currently
+      </div>
+
+      <div class="price-container">
+        <h2 id="price-heading">Price Details</h2>
+      
+        <hr>
+
+        <div class="all-item-price">
+          <p class="total-price">Price (2 items)</p>
+          <p class="total-mrp">0</p>
+        </div>
+
+        <div class="discount-price">
+          <p class="discount-tag">Discount</p>
+          <p class="discount-on-item">0</p>
+        </div>
+
+        <div class="extra-price">
+          <p class="promise-tag">Protect Promise Fee</p>
+          <p class="promise-price">0</p>
+        </div>
+
+        <hr>
+
+        <div class="total-amount">
+          <p class="amount-tag">Total Amount</p>
+          <p class="amount-price">0</p>
+        </div>
+
+        <h2>You Will Save on this order</h2>
+      </div>
+    </div>
+  </section>
+
+  <template id="cartproduct-template">
+
+  </template>
+  <footer class="footer-container">
+    <div class="upper-container">
+        <div class="brand-info">
+          <h1 id="footer-brand-tag">
+            BrandMart
+          </h1>
+
+          <p id="footer-brand-line">
+            Welcome to BrandMart, Discover the latest gadgets here
+          </p>
+
+          <div class="tags">
+            <ul>
+              <li><i class="fa-brands fa-cc-visa"></i></li>
+              <li><i class="fa-brands fa-google-pay"></i></li>
+              <li><i class="fa-duotone fa-regular fa-credit-card"></i></li>
+              <li><i class="fa-brands fa-cc-paypal"></i></li>
+              <li><i class="fa-solid fa-wallet"></i></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="shopping-tags">
+          <ul>
+            <li id="shopping-li-tag">Shopping</li>
+            <li>Washing Machines</li>
+            <li>Refrigerator</li>
+            <li>LED</li>
+            <li>More</li>
+          </ul>
+        </div>
+
+      <div class="experience-tag">
+          <ul>
+            <li id="experience-li-tag">Experience</li>
+            <li>Contact Us</li>
+            <li>Payment Method</li>
+            <li>Delivery</li>
+            <li>Return and Exchange</li>
+          </ul>
+      </div>
+
+      <div class="newsletter-section">
+        <h1 id="newletter-heading">NEWSLETTER</h1>
+
+        <p id="newletter-tag-line">Don't miss out! Get the best offers, new arrivals, and discounts before anyone else.</p>
+
+        <div class="newsletter-input-wrapper">
+          <input type="email" placeholder="Enter your email..">
+          <button type="submit">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="lower-container">
+
+    </div>
+  </footer>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
