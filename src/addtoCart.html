@@ -61,7 +61,7 @@
   <section class="showProductinCart">
     <div class="cartContainer">
        <div class="Cartproduct">
-          No items Currently
+        
       </div>
 
       <div class="price-container">
@@ -97,8 +97,34 @@
   </section>
 
   <template id="cartproduct-template">
+    <div class="cards" id="cardvalue">
+      <article class="information [cards]"> 
+        <span class="category"></span>
 
+        <div class="imageContainer">
+          <img class="productImage" src="" alt="">
+        </div>
+
+        <h2 class="productName"></h2>
+
+        <p class="productPrice"></p>
+
+        <div class="qunatitySection">
+          <div class="quantityValue">
+            <button class="productDecrement">-</button>
+            <p class="showProductQuantity">1</p>
+            <button class="productIncrement">+</button>
+          </div>
+        </div>
+
+        <button class="add-to-card-button remove-to-cart">
+          <i class="fa-solid fa-cart-shopping"></i>Remove
+        </button>
+        
+      </article>
+    </div>
   </template>
+  
   <footer class="footer-container">
     <div class="upper-container">
         <div class="brand-info">
@@ -160,6 +186,6 @@
     </div>
   </footer>
 
-  <script type="module" src="main.js"></script>
+  <script type="module" src="showAddTocart.js"></script>
 </body>
 </html>
