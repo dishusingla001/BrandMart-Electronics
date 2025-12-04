@@ -1,5 +1,6 @@
 import { fetchQuantityFromLS } from "./fetchQuantityFromLS";
 import { getCartProductfromLS } from "./getCartProductfromLS";
+import { incrementDecrement } from "./incrementDecrement";
 import { removeItemfromLS } from "./removeItemfromLS";
 import { updateCart } from "./update_cart";
 import products from "/api/products.json";
@@ -16,7 +17,7 @@ const producttemplate = document.querySelector('#cartproduct-template');
 const showcartProduct = () => {
   updateCart()
   filterProducts.forEach((currElement)=>{
-    const {category,image,name,price,id}=currElement;
+    const {category,image,name,price,id,stock}=currElement;
 
     const productClone = document.importNode(producttemplate.content,true);
 
@@ -35,6 +36,10 @@ const showcartProduct = () => {
     // now we have to add the functionality to the remove buttton 
     productClone.querySelector('.remove-to-cart').addEventListener('click',()=>removeItemfromLS(id));
 
+    // now handle the increment and decrement 
+    productClone.querySelector('.quantityValue').addEventListener('click',(event)=>{
+      incrementDecrement(event,id,stock,price);
+    });
     productCart.append(productClone);
   })
 }
