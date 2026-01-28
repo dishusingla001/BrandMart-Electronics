@@ -6,5 +6,5 @@ export const updateCart = () => {
   const cartItems = getCartProductfromLS();
   var len = cartItems.length; 
   iteminCartIcon.setAttribute('data-count',len);
-  totalCost();
+  // totalCost();
 }

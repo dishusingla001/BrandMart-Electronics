@@ -1,4 +1,5 @@
 import { getCartProductfromLS } from "./getCartProductfromLS";
+import { showToast } from "./showToast";
 import { updateCart } from "./update_cart";
 
 export const addtoCart = (event,id,stock,price) =>{
@@ -10,7 +11,6 @@ export const addtoCart = (event,id,stock,price) =>{
   let quantity = currentElement.querySelector('.showProductQuantity').innerText;
   quantity = Number(quantity);
   price = Number(price*quantity);
-  
   // check the current id is present in the localstorage or not 
   const idPresent = localStorageProduct.find((currElement)=>{
     if(currElement.id === id){
@@ -29,4 +29,5 @@ export const addtoCart = (event,id,stock,price) =>{
   localStorage.setItem('CartProductLS',JSON.stringify(localStorageProduct));
 
   updateCart();
+  showToast("add");
 }

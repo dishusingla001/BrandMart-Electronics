@@ -2,6 +2,7 @@ import { fetchQuantityFromLS } from "./fetchQuantityFromLS";
 import { getCartProductfromLS } from "./getCartProductfromLS";
 import { incrementDecrement } from "./incrementDecrement";
 import { removeItemfromLS } from "./removeItemfromLS";
+import { showToast } from "./showToast";
 import { totalCost } from "./totalCost";
 import { updateCart } from "./update_cart";
 import products from "/api/products.json";
@@ -47,3 +48,4 @@ const showcartProduct = () => {
 
 showcartProduct();
 totalCost();
+// showToast('Added');

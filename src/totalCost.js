@@ -9,10 +9,13 @@ export const totalCost = () => {
   },initialValue);
 
   document.querySelector('.total-mrp').innerText = `₹${totalprice}`;
-  document.querySelector('.discount-on-item').innerText = "- ₹500";
-  document.querySelector('.promise-price').innerText = "- ₹100";
-
-  document.querySelector('.amount-price').innerText = `₹${totalprice-400}`;
-
-  
+  if(totalprice!=0){
+    document.querySelector('.discount-on-item').innerText = "- ₹500";
+    document.querySelector('.promise-price').innerText = "- ₹100";
+    document.querySelector('.amount-price').innerText = `₹${totalprice-400}`;
+  }else{
+    document.querySelector('.discount-on-item').innerText = "0";
+    document.querySelector('.promise-price').innerText = "0";
+    document.querySelector('.amount-price').innerText = totalprice;
+  }
 }

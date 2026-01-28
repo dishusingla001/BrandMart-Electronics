@@ -27,6 +27,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   color: var(--textColor);
 }
 
@@ -38,8 +39,35 @@ body {
 }
 
 html {
+  scroll-behavior: smooth;
   overflow-x: hidden;
   width: 100%;
+}
+
+/* Toast notifications (top-right) */
+#toast {
+  position: fixed;
+  bottom: 3rem;
+  right: 2rem;
+  /* width: 220px; */
+  height: 50px;
+  padding: 12px 16px;
+  background:black;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  transform: translateY(-8px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 220ms ease, transform 220ms ease;
+  z-index: 9999;
+  font-size: 0.95rem;
+}
+
+#toast.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
 .container-navbar{
@@ -2590,4 +2618,34 @@ html {
   .extra-price {
     font-size: 0.9rem;
   }
+}
+
+/* toast notifications */
+
+.toast {
+  position: fixed;
+  top: 2rem;
+  right: 20rem;
+
+  background: #222;
+  color: #fff; 
+  padding: 12px 18px;
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+  transform: translateX(100%);
+  transition: all 0.4s ease;
+
+  z-index: 9999;
+}
+
+/* When toast is visible */
+.toast.show {
+  opacity: 1;
+  transform: translateX(0);
 }

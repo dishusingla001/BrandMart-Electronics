@@ -1,5 +1,6 @@
 import { fetchQuantityFromLS } from "./fetchQuantityFromLS";
 import { getCartProductfromLS } from "./getCartProductfromLS";
+import { totalCost } from "./totalCost";
 import { updateCart } from "./update_cart";
 
 export const incrementDecrement = (event,id,stock,price) => {
@@ -54,5 +55,5 @@ export const incrementDecrement = (event,id,stock,price) => {
   
   productPrice.innerText=`₹${localStoragePrice}`;
   updateCart();
-
+  totalCost();
 }
