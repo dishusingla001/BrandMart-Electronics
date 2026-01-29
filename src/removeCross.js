@@ -1,6 +1,5 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // 1. Select the parent container
-    const container = document.querySelector('.head-container');
+export const removeCross = () => {
+  const container = document.querySelector('.head-container');
     const removebutton = document.getElementById('remove-cross');
 
     // 2. Add a single event listener (Event Delegation)
@@ -8,4 +7,4 @@ document.addEventListener('DOMContentLoaded', () => {
         container.remove();
         console.log("yes");
     });
-});
+}
