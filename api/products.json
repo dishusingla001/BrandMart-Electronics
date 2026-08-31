@@ -64,5 +64,27 @@
     "stock": 7,
     "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS26T8keVI6KRY_L2_kD6rrTLI_pZu56Q4LMIu_bBm_0yZpKM5TuaBeP1aWe6a9VuuWK6OQGTzPbOCEdTNiyFHkB6eoNqMSVO_Eue5vPvLBjiJp3sUfTWZE",
     "description": "24.1MP DSLR with 18-55mm lens. Wi-Fi enabled for easy photo sharing. Perfect for beginners."
+  },
+  {
+    "id": 7,
+    "name": "Apple iPhone 15",
+    "category": "Smartphone",
+    "brand": "Apple",
+    "price": 64999,
+    "originalPrice": 79999,
+    "stock": 18,
+    "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS7-_j9RgyhPs0sJRovvYVfR515eK8taFluL2YfGGjwbN21a--o0FLQ5lXyMHj850Mdw0nDN4LM4sRhvG9Dz6conNWe-4WTyGc9xxYvuMdhOh_eX0crDbvRtMk",
+    "description": "Powerful smartphone with a 6.1-inch Super Retina XDR display, A16 Bionic chip, and advanced dual-camera system."
+  },
+  {
+    "id": 8,
+    "name": "Sony 55-Inch 4K LED Smart TV",
+    "category": "Television",
+    "brand": "Sony",
+    "price": 54999,
+    "originalPrice": 69999,
+    "stock": 9,
+    "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRHSrRrG_9Ms_hqs7ru4mMucpf_g8eGT8pUfHdbj3ZxDfl_16MMVvXqdVjGBGmlUlCWAR6WPmPjpPPprXbmvN2Y_VuPm51ln3y2t5WNlUBSNyqaFjfUY8gu5A",
+    "description": "55-inch 4K Ultra HD Smart TV with HDR support, powerful picture processing, built-in streaming apps, and voice control."
   }
 ]
